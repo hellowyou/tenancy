@@ -1,0 +1,28 @@
+{
+  "name": "tenancy",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Virnon Go2designlab <virnont.go2designlab@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prisma": "cd prisma && prisma",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --no-notify --respawn --transpileOnly ./src"
+  },
+  "dependencies": {
+    "graphql": "^14.1.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "nexus": "^0.10.0",
+    "nexus-prisma": "^0.3.4",
+    "prisma-client-lib": "^1.27.4"
+  },
+  "devDependencies": {
+    "graphql-resolver-codegen": "^0.0.3",
+    "nodemon": "^1.18.10",
+    "prisma": "^1.27.4",
+    "ts-node": "^8.0.2",
+    "ts-node-dev": "^1.0.0-pre.32",
+    "typescript": "^3.3.3333"
+  }
+}

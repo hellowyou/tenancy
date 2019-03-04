@@ -1,0 +1,6 @@
+.vscode
+node_modules
+.DS_STORE
+
+# Ignore code generated files
+src/generated/code

@@ -1,0 +1,9 @@
+endpoint: https://us1.prisma.sh/vigo2-78568e/tenancy/dev
+datamodel: datamodel.prisma
+hooks:
+  post-deploy:
+    - prisma generate
+    - npx nexus-prisma-generate --client ./src/generated/prisma-client --output ./src/generated/nexus-prisma
+generate:
+  - generator: typescript-client
+    output: ../src/generated/prisma-client/
